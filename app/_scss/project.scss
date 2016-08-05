@@ -16,8 +16,63 @@
 
 	// styles should be embedded within this block
 
-	.example {
-		font-weight: bold;
+ 	header {
+ 		width:100%;
+ 		border-bottom:1px solid #ccc;
+ 	}
+/* NAVIGATION */
+ 	#navigation {
+ 		width:100%;
+ 		border:2px solid red;
+ 	}
+ 	#navigation ul {
+	    margin: 0;
+	    padding: 0;
+ 	}
+ 	#navigation ul li {
+ 		display:inline;
+ 		text-transform: uppercase;
+ 		border:1px solid blue;
+ 	}
+ 	#navigation ul li a {
+ 		color:#333;
+ 	}
+/* GENERAL UL STYLING */
+ 	ul {
+ 		list-style-type: none;
+ 	}
+/* MAIN TWO COLUMN GRID */
+ 	.left {
+ 		border:1px solid red;
+ 		width:48%;
+ 		float:left;
+ 	}
+ 	.left img {
+ 		width:90%;
+ 	}
+ 	.right {
+ 		width:48%;border:1px solid yellow;
+ 		float:left;
+ 	}
+/* two columns for inside grid */
+ 	ul.insideList li {
+ 		display: block;
+ 		clear:both;
+ 	}
+ 	ul.insideList li img {
+ 		width:50%;
+ 	}
+
+ 	
+ /* RESPONSIVE CSS */
+ 	@media screen and (max-width: 767px) {
+	    #mainContainer > .right {
+	       float:none;
+	       width:100%; 
+	    }
+	    #mainContainer > .left {
+	    	width:100%;
+	    }
 	}
 
 

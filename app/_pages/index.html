@@ -25,21 +25,158 @@ projectJs:
 
 ---
  <style>	
+ 	body {
+ 		font-family: arial;
+ 	}
  	header {
  		width:100%;
  		border-bottom:1px solid #ccc;
  	}
+ 	h1 {
+ 		text-align: center;
+ 		color:#424242;
+ 		width:50%;
+ 		margin:0 auto;
+ 	}
+/* NAVIGATION */
+ 	#navigation {
+ 		width:100%;
+ 		border:0px solid red;
+ 		margin-bottom:20px;
+ 	}
+ 	#navigation ul {
+	    margin: 0;
+	    padding: 0;
+ 	}
+ 	#navigation ul li {
+ 		display:inline;
+ 		text-transform: uppercase;
+ 		border:0px solid blue;
+ 	}
+ 	#navigation ul li a {
+ 		color:#333;
+ 	}
+
+ /* MainContainer */
+ #mainContainer {
+ 	width:80%;
+ 	margin-left:10%;
+ 	margin-top:100px;
+ }
+/* GENERAL UL STYLING */
+ 	ul {
+ 		list-style-type: none;
+ 	}
+/* MAIN TWO COLUMN GRID */
+ 	.left {
+ 		border:0px solid red;
+ 		width:38%;
+ 		float:left;
+ 	}
+ 	.left img {
+ 		width:100%;
+ 	}
+ 	.right {
+ 		width:58%;
+ 		border:0px solid red;
+ 		float:left;
+ 	}
+/* two columns for inside grid */
+	ul.insideList h4 {
+		color:#818181;
+	}
+	ul.insideList p {
+		color:9a9a9a;
+	}
+ 	ul.insideList li {
+ 		display: block;
+ 		clear:both;
+ 	}
+
+ 	ul.insideList li img {
+ 		border:0px solid orange;
+ 		width:20%;
+ 		margin-top:10%;
+ 		float:right;
+ 		margin-right:15%;
+ 	}
+
+
+ /* RESPONSIVE CSS */
+ 	@media screen and (max-width: 767px) {
+	    #mainContainer > .right {
+	       float:none;
+	       width:100%; 
+	    }
+	    #mainContainer > .left {
+	    	width:100%;
+	    }
+	}
  </style>
 
   <!-- prefix all assets with {{assetRoot}} to maintain local/server refs -->
   <!-- <img src="{{assetRoot}}/assets/img/logo.svg"> -->
 
-<p style="color:red;">-- Begin ISP Test --</p>
+
 
  <header>
+
+
+ 	<div id="navigation">
+        <ul class="nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="satellite.html">Satellite Tracker</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="experiment.html">Request An Experiment</a></li>
+        </ul>
+    </div>
+ 	
   	<h1>140 Watts of Heat Energy Per Gram in the Palm of Your Hand</h1>
+
 </header>
+
+<div id="mainContainer">
+	<div class="left">
+		<img src="/assets/img/testImg.jpg" />
+	</div>
+	<div class="right">
+		<ul class="insideList">
+			<li>
+				<div class="left">
+					<img src="http://findicons.com/files/icons/2198/dark_glass/128/presence_offline.png" />
+				</div>
+				<div class="right">
+					<h4>Polonium-210</h4>
+					<p>Who said alpha decay wasn't profitable? Our E84SAT-1 has been continuously streaming EDM for 2 years on just 3g of Po-210</p>
+				</div>
+			</li>	
+		</ul>
+		<ul class="insideList">
+			<li>
+				<div class="left">
+					<img src="http://findicons.com/files/icons/2198/dark_glass/128/presence_offline.png" />
+				</div>
+				<div class="right">
+					<h4>Polonium-210</h4>
+					<p>Who said alpha decay wasn't profitable? Our E84SAT-1 has been continuously streaming EDM for 2 years on just 3g of Po-210</p>
+				</div>
+			</li>	
+		</ul>
+		<ul class="insideList">
+			<li>
+				<div class="left">
+					<img src="http://findicons.com/files/icons/2198/dark_glass/128/presence_offline.png" />
+				</div>
+				<div class="right">
+					<h4>Polonium-210</h4>
+					<p>Who said alpha decay wasn't profitable? Our E84SAT-1 has been continuously streaming EDM for 2 years on just 3g of Po-210</p>
+				</div>
+			</li>	
+		</ul>
+	</div>
+</div>
     <!--<img src="{{assetRoot}}/assets/img/testImg.jpg">-->
 
-<p style="color:red;">-- END ISP Test --</p>
+
 
