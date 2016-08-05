@@ -114,7 +114,8 @@ module.exports = function(grunt) {
         },
         open: {
             server: {
-                path: 'http://isp.dev.nationalgeographic.com:3000'
+                //path: 'http://isp.dev.nationalgeographic.com:3000'
+                path:  'http://localhost:3000'
             }
         },
         clean: {
