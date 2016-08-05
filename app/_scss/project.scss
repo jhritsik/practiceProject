@@ -1,168 +1,152 @@
-
-@import "global/variables/typography";
-
-// icoNGS: http://natgeo.github.io/icongs/
-
-@font-face {
-  font-family: "icongs";
-  src: url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.eot");
-  src: url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.eot?#iefix") format("embedded-opentype"), url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.woff") format("woff"), url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.ttf") format("truetype"), url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.svg#icongs") format("svg");
-  font-weight: normal;
-  font-style: normal;
+body {
+    font-family: arial, sans-serif;
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #001523;
 }
-
-
+#pageTitle {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 100px 0 0 100px;
+}
+.globe,
+#insidePageTitle {
+    display: inline-block;
+    vertical-align: middle;
+}
+#insidePageTitle {
+    * {
+        margin: 0;
+    }
+}
+#insidePageTitle p {
+    font-size: 12px;
+    line-height: 25px;
+}
 #practiceProject {
-
-
- 	body {
- 		font-family: arial;
- 	}
- 	header {
- 		width:100%;
- 		border-bottom:1px solid #ccc;
- 	}
- 	h1 {
- 		text-align: center;
- 		color:#424242;
- 		width:50%;
- 		margin:0 auto 30px auto;
- 	}
-/* NAVIGATION */
- 	#navigation {
- 		width:100%;
- 		border:0px solid red;
- 		margin-bottom:30px;
- 		background-color: #e5e8e9;
- 	}
- 	.active {
- 		background-color: #fff;
- 	}
- 	#navigation ul {
-	    margin: 0;
-	    padding: 0;
-
-	    li {
-	 		display:inline-block;
-	 		text-transform: uppercase;
-	 		border:0px solid blue;
-	 		width:auto;
-	 		padding:0 25px;
-	 		text-align: center;
-	 		line-height: 50px;
-	 		margin-right:2%;
-
-	 		@media screen and (max-width: 767px) {
-	 			display:block;
-	 		}
-	 	}
-	 	a {
-	 		color:#333;
-	 		display:inline-block;
-	 		text-decoration: none;
-	 	}
- 	}
- 	
- 	
- 	.home {
- 		margin-left:15px;
- 	}
-
- /* MainContainer */
- #mainContainer {
- 	width:80%;
- 	margin-left:10%;
- 	margin-top:100px;
-
- 	@media screen and (max-width: 767px) {
-
- 	}
- }
-/* GENERAL UL STYLING */
- 	ul {
- 		list-style-type: none;
- 	}
-/* MAIN TWO COLUMN GRID */
- 	.left {
- 		border:0px solid red;
- 		width:38%;
- 		float:left;
-
- 		img {
-	 		width:100%;
-	 	}
-	 	@media screen and (max-width: 767px) {
-	 		float:none;
-	 		width:100%;
-	 	}
- 	}
- 	
- 	.right {
- 		width:58%;
- 		border:0px solid red;
- 		float:left;
- 		margin-top:-5px;
-
- 		@media screen and (max-width: 767px) {
-	 		float:none;
-	 		width:100%;
-	 	}
- 	}
-/* two columns for inside grid */
-	.insideList {
-		h4 {
-			color:#818181;
-		}
-		p {
-			color:9a9a9a;
-		}
-		li {
-	 		display: block;
-	 		clear:both;
-	 	}
-	}
- 	.svgContainer {
- 		width:20px;
- 		height:20px;
- 		border: 0px solid black;
- 		border-radius: 50%;
- 		padding:20px;
- 		position: relative;
- 		float:right;
- 		margin-right:15%;
- 		background-color: #e6e6e6;
- 		margin-top:15%;
-
- 		@media screen and (max-width: 767px) {
- 			float:left;
- 			margin-top:5%;
- 		}
-
- 		.icons {
-	 		left: 50%;
-			position: absolute;
-			top: 50%;
-			transform: translate(-50%, -50%);
-	 	}
- 	}
-
-
- /* RESPONSIVE CSS 
- 	@media screen and (max-width: 767px) {
-	    #mainContainer > .right {
-	       float:none;
-	       width:100%; 
-	    }
-	    #mainContainer > .left {
-	    	width:100%;
-	    } 
-	    .insdieList .left {
-	    	width:20%;
-
-	    }
-	    .insideList .right {
-	    	width:75%;
-
-	    }
-	}*/
+    background-color: #fff;
+    padding-bottom: 100px;
+    margin: 0 100px 100px 100px;
+    border-top: 5px solid #ff0000;
+    header {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    h1 {
+        text-align: center;
+        color: #424242;
+        width: 50%;
+        margin: 0 auto 30px auto;
+        line-height: 1.3;
+    }
+    /* NAVIGATION */
+    
+    #navigation {
+        width: 100%;
+        border: 0px solid red;
+        margin-bottom: 30px;
+        background-color: #e5e8e9;
+    }
+    .active {
+        background-color: #fff;
+    }
+    #navigation ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            border: 0px solid blue;
+            width: auto;
+            padding: 0 25px;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 2%;
+            @media screen and (max-width: 980px) {
+                display: block;
+            }
+        }
+        a {
+            color: #333;
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+    .home {
+        margin-left: 15px;
+    }
+    /* MainContainer */
+    
+    #mainContainer {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 100px;
+        overflow: auto;
+        background-color: #fff;
+    }
+    /* GENERAL UL STYLING */
+    
+    ul {
+        list-style-type: none;
+    }
+    /* MAIN TWO COLUMN GRID */
+    
+    .left {
+        border: 0px solid red;
+        width: 38%;
+        float: left;
+        img {
+            width: 100%;
+        }
+        @media screen and (max-width: 767px) {
+            float: none;
+            width: 100%;
+        }
+    }
+    .right {
+        width: 58%;
+        border: 0px solid red;
+        float: left;
+        margin-top: -5px;
+        @media screen and (max-width: 767px) {
+            float: none;
+            width: 100%;
+        }
+    }
+    /* two columns for inside grid */
+    
+    .insideList {
+        h4 {
+            color: #818181;
+        }
+        p {
+            color: 9a9a9a;
+        }
+        li {
+            display: block;
+            clear: both;
+        }
+    }
+    .svgContainer {
+        width: 20px;
+        height: 20px;
+        border: 0px solid black;
+        border-radius: 50%;
+        padding: 20px;
+        position: relative;
+        float: right;
+        margin-right: 15%;
+        background-color: #e6e6e6;
+        margin-top: 15%;
+        @media screen and (max-width: 767px) {
+            float: left;
+            margin-top: 5%;
+        }
+        .icons {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
