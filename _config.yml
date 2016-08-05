@@ -1,0 +1,6 @@
+name: special-project
+assetRoot: 'http://www.nationalgeographic.com/interactive-assets/special-project/v1'
+version: 1
+author:
+    name: 'NGS App Dev'
+    email: natgeoseapps@natgeo.com

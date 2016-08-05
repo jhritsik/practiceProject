@@ -1,0 +1,47 @@
+---
+layout: <% if(build) { print(layoutBuild) } else { print(layoutDev) } %>
+
+# REQUIRED: preview layout: embed_xsmall, embed_small, embed_medium, basic_html_layout, interactive_layout
+layoutDev: interactive_layout
+
+# REQUIRED: build layout: build (for embed), basic_html_layout
+layoutBuild: build
+
+# REQUIRED: give the interactive a unique id
+embedId: projectName
+
+# list of css assets. project.css corresponds with _scss/project.scss
+embedCss:
+- css/project.css
+
+# list of js libs
+vendorJs:
+- bower_components/jquery/dist/jquery.js
+
+# list of js assets
+projectJs:
+- js/module.sample.js
+- js/project.js
+
+---
+ 
+
+  <!-- prefix all assets with {{assetRoot}} to maintain local/server refs -->
+  <!-- <img src="{{assetRoot}}/assets/img/logo.svg"> -->
+
+<p style="color:red;">-- Begin ISP Test --</p>
+
+  {{#markdown}}
+  # Lorem Ipsum
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ratione facilis cupiditate molestias doloremque voluptatem consequuntur, enim, qui placeat dolorum nam quibusdam ipsam laborum corporis, deleniti libero distinctio possimus animi. 
+  {{/markdown}}
+
+  <p>Quos laborum ea iste architecto, consectetur eligendi voluptate, expedita in aliquam delectus quia unde. At accusantium quasi nulla autem sed dolorem, libero, quisquam iste excepturi, consequuntur recusandae deleniti neque saepe!</p>
+
+  	<p class="byline-component__publish">Error perferendis fugiat nulla cupiditate eaque aspernatur, autem non, id deleniti repellendus, iure labore iste suscipit doloremque deserunt hic facilis? Temporibus est tempora doloremque, ad laboriosam blanditiis ex animi eius!</p> 
+
+    <img src="{{assetRoot}}/assets/img/testImg.jpg">
+
+<p style="color:red;">-- END ISP Test --</p>
+

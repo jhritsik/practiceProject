@@ -1,0 +1,25 @@
+
+@import "global/variables/typography";
+
+// icoNGS: http://natgeo.github.io/icongs/
+
+@font-face {
+  font-family: "icongs";
+  src: url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.eot");
+  src: url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.eot?#iefix") format("embedded-opentype"), url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.woff") format("woff"), url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.ttf") format("truetype"), url("http://assets.nationalgeographic.com/icongs_0-10-0/fonts/icongs_a5b67007ff5a80787e9ee410b47e8038.svg#icongs") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#projectName {
+
+	// styles should be embedded within this block
+
+	.example {
+		font-weight: bold;
+	}
+
+
+}
+
